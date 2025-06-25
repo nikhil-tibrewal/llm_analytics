@@ -1,0 +1,16 @@
+# FastAPI framework
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+
+# PostgreSQL DB access
+sqlalchemy==2.0.30
+psycopg2-binary==2.9.9
+
+# Environment management
+python-dotenv==1.0.1
+
+# Optional: for token counting or LLM-related tools
+tiktoken==0.7.0  # if using OpenAI token cost estimation
+
+# Optional: for CORS if frontend will access backend
+fastapi[all]
