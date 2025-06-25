@@ -23,3 +23,7 @@ def root():
 def log_entry(log: schemas.LogRequest, db: Session = Depends(get_db)):
     saved = crud.create_log(db, log)
     return {"id": saved.id, "message": "Log saved"}
+
+@app.get("/metrics")
+def get_metrics(db: Session = Depends(get_db)):
+    return crud.get_metrics(db)
