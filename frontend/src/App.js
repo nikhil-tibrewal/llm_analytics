@@ -7,7 +7,7 @@ function App() {
   const [metrics, setMetrics] = useState(null);
 
   useEffect(() => {
-    axios.get("http://<YOUR_EXTERNAL_IP>:8000/metrics")
+    axios.get("http://localhost:8000/metrics")
       .then((res) => setMetrics(res.data))
       .catch((err) => console.error("Failed to load metrics:", err));
   }, []);
