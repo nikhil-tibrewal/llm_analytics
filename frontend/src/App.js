@@ -16,9 +16,6 @@ function App() {
 
   return (
     <div className="p-4 space-y-4">
-      <div className="bg-red-300 text-white p-4 m-4 rounded">
-        This should have a red background
-      </div>
       <h1 className="text-2xl font-bold">LLM Usage Dashboard</h1>
       <MetricsCards metrics={metrics} />
       <ModelChart data={metrics.top_models} />
